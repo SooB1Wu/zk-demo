@@ -1,0 +1,28 @@
+server:
+  port: 8088
+  tomcat:
+    uri-encoding: utf-8
+
+zookeeper:
+  sessionTimeout: 40000
+  connectionTimeout: 2000
+  zkAddress: 121.5.169.34:8001,121.5.169.34:8002,121.5.169.34:8003
+  server1:
+    address: 121.5.169.34:8001
+  server2:
+    address: 121.5.169.34:8002
+  server3:
+    address: 121.5.169.34:8003
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password: 123456
+  jedis:
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 500
+      min-idle: 0
+  lettuce:
+    shutdown-timeout: 0
